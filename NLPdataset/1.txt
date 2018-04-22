@@ -1,0 +1,152 @@
+Optogenetic interrogation of neural circuits: technology for probing mammalian brain structures
+
+Elucidation of the neural substrates underlying complex animal behaviors depends on precise activity control tools, as well as
+compatible readout methods. Recent developments in optogenetics have addressed this need, opening up new possibilities for
+systems neuroscience. Interrogation of even deep neural circuits can be conducted by directly probing the necessity and sufficiency
+of defined circuit elements with millisecond-scale, cell type-specific optical perturbations, coupled with suitable readouts such
+as electrophysiology, optical circuit dynamics measures and freely moving behavior in mammals. Here we collect in detail our
+strategies for delivering microbial opsin genes to deep mammalian brain structures in vivo, along with protocols for integrating the
+resulting optical control with compatible readouts (electrophysiological, optical and behavioral). The procedures described here,
+from initial virus preparation to systems-level functional readout, can be completed within 4–5 weeks. Together, these methods
+may help in providing circuit-level insight into the dynamics underlying complex mammalian behaviors in health and disease.
+
+INTRODUCTION
+Understanding the circuit-level functional organization of the
+brain will have important implications for both basic and clinical
+neuroscience. In particular, we have found that optical manipulation
+of activity in neural circuits with light-sensitive rhodopsins, such as
+the Chlamydomonas channelrhodopsin-2 (ChR2) 1,2 , Volvox channel­
+rhodopsin-1 (VChR1) 3 , Natronomonas halorhodopsin (NpHR) 4
+(Fig. 1a) and synthetic rhodopsin/GPCR chimeras 5 (optoXRs;
+Fig. 1b), may help in illuminating both the normal circuit function
+and major disease mechanisms 6–19 . Here we illustrate the critical
+steps we have developed for the implementation of this optogenetic 6,7
+approach to probe the function of deep brain circuit elements in
+mammals. We first review the basic optogenetic control tools we have
+described, followed by discussion of optimization of expression, target-
+ing and readout technology. We then present the necessary materials
+and outline a detailed series of our experimental protocols for integrat-
+ing optogenetic neuronal manipulation with in vivo and ex vivo readout
+methods, including electrophysiological and optical measures.
+Experimental design considerations
+Temporally precise genetically encoded control.  Classical neuro­
+nal manipulation techniques (electrical, pharmacological and
+genetic) either simultaneously affect surrounding cells and proc-
+esses in addition to the target population or have slow kinetics and
+poor reversibility, thereby severely limiting the strength of con-
+clusions that can be drawn. To overcome these spatial and tem-
+poral limitations, microbial and chimeric-vertebrate opsin genes
+(Table 1) have been developed recently to control highly-defined
+electrical (Fig. 1a) and biochemical (Fig. 1b) activity with cell-
+type selectivity, high temporal precision and rapid reversibility. As
+most neurons in the brain are not naturally light-sensitive, selective
+expression of opsin genes in targeted neural populations makes it
+possible to specifically control the activity in these populations,
+and the resulting fast on–off kinetics make it possible to evoke or
+inhibit neural activity within milliseconds, on a timescale relevant
+to the physiological brain functions.
+At present, light-activated cation channels from two distinct algal
+species, channelrhodopsin-2 from Chlamydomonas reinhardtii
+(ChR2) 1,2,20 and channelrhodopsin-1 from Volvox carteri (VChR1) 3
+(Fig. 1a, left and middle), have proven to be a powerful pair of tools
+for controlling neural activity. ChR2 is maximally activated by blue
+light at 470 nm, whereas VChR1 remains significantly light sensitive
+even at 589 nm, a wavelength at which (importantly) ChR2 is no
+longer responsive (Fig. 1c). Both ChR2 (deactivation time constant
+~12 ms) and VChR1 (deactivation time constant ~120 ms) are able
+to transduce trains of millisecond-duration light flashes into defined
+spike trains up to 30–50 Hz 1,2,8 . Conversely, the chloride-pumping
+halorhodopsin from Natronomonas pharaonis (NpHR) has been
+shown to hyperpolarize neurons upon illumination with yellow
+light (Fig. 1c). Because of sufficient spectral separation, NpHR and
+ChR2 can simultaneously be expressed in the same neurons to enable
+bidirectional optical control of neural activity. Moreover, both use
+all-trans retinal as the chromophore, which is abundantly present in
+mammalian brain tissue, and therefore these optogenetic tools are
+fully functional without the addition of chemical cofactors in vivo 4 .
+Optimizing expression and function.  For all of these proteins,
+expression issues will determine crucial aspects of perform-
+ance. For example, because of the inactivation kinetics of ChR2,
+higher-expressing cells will be able to follow fast spike frequen-
+cies for longer periods of time, as these cells will be able to
+employ larger pools of the remaining non-inactivated ChR2. As
+another example, without the proper targeting sequences, high
+levels of micro­bial protein expression in mammalian cells can
+result in the aggregation of misfolded proteins in the Golgi, the
+endoplasmic reticulum and other intracellular compartments.
+As the conductance of individual rhodopsins is relatively low
+(picosiemens or less for ChR2, and even lower for NpHR as a pump, due
+to its 1:1 coupling between photon absorption and ion flux), it is
+critical to maximize the number of molecules that are properly
+integrated into the cytoplasmic membrane, in addition to opti-
+mizing transcription of the opsin genes. For this reason, we have
+been constructing enhanced versions of halorhodopsin (eNpHR)
+by optimizing membrane trafficking sequences to increase the
+efficiency of membrane targeting 21,22 . eNpHR exhibits higher
+levels of membrane expression and more robust photocurrents,
+and similar modifications could be applied to optimize other
+microbial light-activated proteins for enhanced photocurrents.
+Molecular engineering is also leading to expanded and refined
+function of these microbial proteins by altering spectral proper­ties,
+conductance or kinetics. One point mutation (H134R in ChR2
+(ref. 23)) has been shown to result in 2–3× enhanced cellular
+photocurrents 24 (but at the expense of slowed deactivation).
+Channelrhodopsin deactivation can be slowed so much that a novel
+utility is achieved; several C128 point mutants of ChR2 exhibit
+profound bistability, converting a brief pulse of light into a stable
+step in membrane potential 25 . Transduced cells are (at steady state)
+responsive to light at >100× lower light levels because of delayed
+exit of these proteins from the open state 25 . These C128 mutants
+are still activated by blue (470 nm) light, but photocurrents elicited
+by the opening of ChR2(C128A) and ChR2(C128S) can effectively
+be terminated by a pulse of green (542 nm) light. These engineered
+step function opsins (SFO) can optically sensitize cells to native
+patterns of input, by providing a sustained step depolarization of
+the target cell membrane potential that can increase excitability.
+In many settings this approach will be preferable to simply driv-
+ing user-defined trains with ­possibly inappropriate spike times.
+440 | VOL.5 NO.3 | 2010 | nature protocols
+b
+NpHR
+VChR1 589 nm 589 nm
+Gs
+protocol
+500
+550
+600
+Wavelength (nm)
+650
+Opsin XFP
+WPRE
+polyA ITR
+loxP
+Cre-dependent AAV vector
+Related experimental leverage in terms of more natural control of
+native spike timing may also result from use of the optoXRs (Fig. 1;
+Table 1), which achieve temporally precise modulation of intra­
+cellular biochemical activity rather than direct control of spiking; of
+course, in some settings direct control of spike timing is the desired
+effect, in which case ChR2 or VChR1 are employed.
+Genetic strategies for targeting expression to specific neural
+populations.  Opsin genes can be selectively expressed in defined
+subsets of neurons in the brain using a variety of expression tar-
+geting strategies 26–28 . Here we focus on those techniques that have
+been shown to be effective in achieving functional expression
+of optogenic proteins in vivo.
+Viral expression systems: unlike many other genetic targeting
+strategies requiring the use of transgenic animal models, viral
+vectors 29 based on lentivirus and adeno-associated virus (AAV) can
+be used to target opsin gene expression in a wide range of experi-
+mental subjects ranging from rodents to primates. Specifically, high
+titer lentivirus and AAV-based vectors (>10 9 transducing units (TU)
+ml  − 1 for lentivirus and >10 12 genome copies (gc) ml  − 1 for AAV vec-
+tors) can be easily produced in Biosafety Level 2-certified tissue-
+culture facilities in 1–2 weeks, or alternatively obtained through
+a number of virus production facilities (e.g., Viral Vector Core,
+University of North Carolina, Chapel Hill, North Carolina, USA,
+and Virapur, LLC., San Diego, California, USA). These transduction
+methods have been shown to achieve high levels of functional opsin
+gene expression in neurons for several months.
+Although most common AAV (Fig. 1d, top) and lentivirus
+(Fig. 1d, middle) vectors carry strong ubiquitous or pan-neuronal
+promoters, some more specific promoter fragments retain cell
